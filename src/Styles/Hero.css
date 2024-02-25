@@ -1,0 +1,253 @@
+@import url("https://fonts.cdnfonts.com/css/badaboom-bb");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Cedarville+Cursive&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sacramento&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&display=swap");
+
+.Hero-Main-Div {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #d24545;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* padding: 12vh 5vh 30vh 5vh; */
+}
+
+.Hero-Content-Div {
+  position: relative;
+  top: 10vh;
+  left: 0;
+  height: 92vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  transform: translatey(-10vh);
+  color: #eeecb6f3;
+  padding: 0 15vw 0 5vw;
+  overflow: hidden;
+}
+
+.Hero-Content-Div h1 {
+  font-family: "BadaBoom BB", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  margin: 0 0 15px 0;
+  overflow: hidden;
+}
+
+.Hero-Content-Div p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+
+.Hero-Image-Div {
+  width: 25vw;
+  height: 100vh;
+
+  margin: 0 10vw 0 0;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 3.5vw 6vw 6vw 6vw 3.5vw;
+  grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+}
+
+.Comic {
+  width: 100%;
+  height: 100%;
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-end: 11;
+}
+.Deadpool {
+  width: 100%;
+  grid-row-start: 1;
+  grid-row-end: 11;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Deadpool-Image {
+  height: auto;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .Hero-Main-Div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .Hero-Content-Div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly !important;
+    align-items: flex-start;
+    height: fit-content;
+    width: 100%;
+
+    margin: 10vh 0 10vh 0;
+  }
+  .Hero-Content-Div h1 {
+    font-size: 3rem;
+  }
+  .Hero-Content-Div p {
+    font-size: 0.8rem;
+  }
+  .Hero-Image-Div {
+    width: 100vw;
+    height: 40vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vh !important;
+    margin: 0;
+    grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw;
+    grid-template-rows: 4vh 8vh 8vh 8vh 8vh 4vw;
+  }
+  .Comic {
+    width: 100%;
+    height: 100%;
+    grid-row-start: 2 !important;
+    grid-column-start: 1 !important;
+    grid-column-end: 11 !important;
+    grid-row-end: 6 !important;
+  }
+  .Deadpool {
+    height: 100%;
+    width: 100%;
+    grid-row-start: 1 !important;
+    grid-row-end: 7 !important;
+    grid-column-start: 1 !important;
+    grid-column-end: 11 !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* animation: 55s updown infinite linear; */
+  }
+
+  .Deadpool-Image {
+    height: 100%;
+    width: auto;
+  }
+
+  .logos {
+    position: absolute;
+    left: -2vh !important;
+    bottom: 2vh !important;
+  }
+  .hero-bg-text {
+    font-size: 2.5rem !important;
+  }
+}
+
+.hero-bg-text {
+  opacity: 25%;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 1000;
+  font-size: 4.5rem;
+  font-style: normal;
+  color: #eeecb6;
+}
+
+.logos {
+  overflow: hidden;
+  width: 100vw;
+
+  background: rgba(255, 255, 255, 0);
+  white-space: nowrap;
+  position: absolute;
+  left: -2vh;
+  bottom: 7vh;
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  margin: 1rem 0 0 0;
+  display: inline-block;
+  animation: 55s slide infinite linear;
+}
+
+.logos-slide p {
+  opacity: 40%;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  width: 8vw;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(5, 5, 5, 0), #d24545);
+}
+
+.logos:after {
+  width: 100px;
+  right: 0;
+  background: linear-gradient(to right, rgba(5, 5, 5, 0), #d24545);
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 1300px) {
+  .Hero-Content-Div h1 {
+    font-size: 3.5rem;
+  }
+  .Hero-Content-Div p {
+    font-size: 0.8rem;
+  }
+  .Hero-Content-Div {
+    padding: 0 3em 0 3em;
+  }
+}
+
+@media (max-width: 1050px) {
+  .Hero-Content-Div h1 {
+    font-size: 2.7rem;
+  }
+  .Hero-Content-Div p {
+    font-size: 0.7rem;
+  }
+}
