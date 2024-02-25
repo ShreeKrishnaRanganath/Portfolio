@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Personal-Portfolio/static/css/main.3851c393.css",
+    "main.js": "/Personal-Portfolio/static/js/main.2e5fd60c.js",
+    "static/js/592.b5135eeb.chunk.js": "/Personal-Portfolio/static/js/592.b5135eeb.chunk.js",
+    "static/media/Deadpool-Hero.gif": "/Personal-Portfolio/static/media/Deadpool-Hero.578fc37d87334c63dd87.gif",
+    "static/media/Comicbg.png": "/Personal-Portfolio/static/media/Comicbg.a82e6cbee8c1006d7b69.png",
+    "static/media/Deadpool-Comic.png": "/Personal-Portfolio/static/media/Deadpool-Comic.947bbc397f9e4ef8603c.png",
+    "static/media/playingcards3.webp": "/Personal-Portfolio/static/media/playingcards3.da5fb1373f05e3daa41c.webp",
+    "static/media/AboutMeImage.png": "/Personal-Portfolio/static/media/AboutMeImage.a62185715dfce0d6afd8.png",
+    "static/media/playingcards.webp": "/Personal-Portfolio/static/media/playingcards.f129b7de262d97171e52.webp",
+    "static/media/SK_Logo.png": "/Personal-Portfolio/static/media/SK_Logo.9344d1be0c3eab7e00b2.png",
+    "static/media/playingcrads2.jpeg": "/Personal-Portfolio/static/media/playingcrads2.677dd382d2d1b5c357cd.jpeg",
+    "index.html": "/Personal-Portfolio/index.html",
+    "main.3851c393.css.map": "/Personal-Portfolio/static/css/main.3851c393.css.map",
+    "main.2e5fd60c.js.map": "/Personal-Portfolio/static/js/main.2e5fd60c.js.map",
+    "592.b5135eeb.chunk.js.map": "/Personal-Portfolio/static/js/592.b5135eeb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3851c393.css",
+    "static/js/main.2e5fd60c.js"
+  ]
+}
